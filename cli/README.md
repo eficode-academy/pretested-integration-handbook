@@ -1,6 +1,8 @@
 # Pretested through the CLI
 
-## As a developer - Do and deliver
+## As a developer
+
+### fetch and deliver changes
 
 * Change branch to the branch you would like to push changes to afterwards: `git checkout master`
 
@@ -20,7 +22,7 @@
 
 * Push your changes for integration: `git push origin DEV-321-something :ready/ DEV-321-something`
 
-## Integration failed
+### Integration failed
 
 * checkout your failed branch: `git checkout DEV-321-something`
 
@@ -34,12 +36,14 @@
 
 * Push the local branch with the resolved merge conflicts: `git push origin ready/DEV-321-something`
 
-## One commit push (Squash your work)
+### One commit push
 
-* To view how many commit your are committing to master `git log --oneline --decorate --graph master HEAD`
+* To view how many commits your are committing to master `git log --oneline --decorate --graph master HEAD`
 
-* Interactive 
+* Interactive rebasing your commits on top of master: `git rebase -i master DEV-321-something`
 
-## Clean up
+* Push your local branch: `git push origin ready/DEV-321-something`
+
+### Clean up
 
 * Clean up all local merged branches `git fetch [ --all --prune ]`
