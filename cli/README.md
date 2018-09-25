@@ -1,8 +1,8 @@
-# Pretested through the CLI
+# Pretested using the CLI
 
 ## As a developer
 
-### fetch and deliver changes
+### Fetch and Deliver changes
 
 * Change branch to the branch you would like to push changes to afterwards: `git checkout master`
 
@@ -24,13 +24,13 @@
 
 ### Integration failed
 
-* checkout your failed branch: `git checkout DEV-321-something`
+* Checkout your failed branch: `git checkout DEV-321-something`
 
 * Replay your work on top of master to get the issues/conflicts: `git pull --rebase`
 
 * Fix the problem - solve the merge conflicts
 
-* continue with the rebase of code: `git rebase --continue`
+* Continue with the rebase of code: `git rebase --continue`
 
 * Delete the old pushed branch: `git push origin --delete ready/DEV-321-something`
 
@@ -38,7 +38,7 @@
 
 ### One commit push
 
-* To view how many commits your are committing to master `git log --oneline --decorate --graph master HEAD`
+* To view how many commits your are pushing to master `git log --oneline --decorate --graph master HEAD`
 
 * Interactive rebasing your commits on top of master: `git rebase -i master DEV-321-something`
 
