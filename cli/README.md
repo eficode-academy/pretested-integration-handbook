@@ -20,7 +20,7 @@
 
 * Ensure that there are no conflicts
 
-* Push your changes for integration: `git push origin DEV-321-something :ready/ DEV-321-something`
+* Push your changes for integration: `git push origin DEV-321-something:ready/DEV-321-something`
 
 ### Integration failed
 
