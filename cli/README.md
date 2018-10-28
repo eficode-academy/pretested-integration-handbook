@@ -47,3 +47,7 @@
 ### Clean up
 
 * Clean up all local merged branches `git fetch [ --all --prune ]`
+
+### Want to reset local master
+
+* `git checkout master` , `git fetch origin` , `git reset --hard origin/master`
